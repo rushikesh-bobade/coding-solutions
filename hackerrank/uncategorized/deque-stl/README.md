@@ -11,7 +11,7 @@ _Description not available._
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-06-17T18:22:22.559Z  
+**Submitted:** 2026-06-17T18:22:21.563Z  
 
 ```cpp
     cout << endl;
