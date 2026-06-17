@@ -1,23 +1,21 @@
-#include <iostream>
-#include <deque>
-using namespace std;
+    cout << endl;
+}
 
-void printKMax(int arr[], int n, int k) {
-    deque<int> dq;
+int main() {
+    int t;
+    cin >> t;
 
-    for (int i = 0; i < n; i++) {
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
 
-        // Remove indices outside current window
-        while (!dq.empty() && dq.front() <= i - k)
-            dq.pop_front();
+        int arr[n];
 
-        // Remove smaller elements from back
-        while (!dq.empty() && arr[dq.back()] <= arr[i])
-            dq.pop_back();
+        for (int i = 0; i < n; i++)
+            cin >> arr[i];
 
-        dq.push_back(i);
-
-        // Print max once first window is formed
-        if (i >= k - 1)
-            cout << arr[dq.front()] << " ";
+        printKMax(arr, n, k);
     }
+
+    return 0;
+}
