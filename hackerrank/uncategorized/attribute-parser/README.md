@@ -11,7 +11,7 @@ _Description not available._
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-06-17T18:21:18.562Z  
+**Submitted:** 2026-06-17T18:21:19.559Z  
 
 ```cpp
         while (ss >> attr) {
