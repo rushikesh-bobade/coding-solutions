@@ -1,4 +1,4 @@
-# Attribute Parser
+# Deque-STL
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-uncategorized-red)
 
@@ -11,26 +11,26 @@ _Description not available._
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-06-17T18:21:49.562Z  
+**Submitted:** 2026-06-17T18:22:20.565Z  
 
 ```cpp
-        while (ss >> attr) {
-            ss >> eq >> value;
+    cout << endl;
+}
 
-            value = value.substr(1, value.size() - 2);
+int main() {
+    int t;
+    cin >> t;
 
-            mp[path + "~" + attr] = value;
-        }
-    }
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
 
-    while (q--) {
-        string query;
-        getline(cin, query);
+        int arr[n];
 
-        if (mp.find(query) != mp.end())
-            cout << mp[query] << '\n';
-        else
-            cout << "Not Found!" << '\n';
+        for (int i = 0; i < n; i++)
+            cin >> arr[i];
+
+        printKMax(arr, n, k);
     }
 
     return 0;
