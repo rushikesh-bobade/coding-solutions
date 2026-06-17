@@ -6,7 +6,7 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Solved | 30 |
+| Total Solved | 31 |
 | Easy | 0 |
 | Medium | 0 |
 | Hard | 0 |
@@ -17,7 +17,7 @@
 
 | Language | Solutions |
 |----------|-----------|
-| C++ | 30 |
+| C++ | 31 |
 
 ---
-*Last updated: 2026-06-17T18:54:19.305Z*
+*Last updated: 2026-06-17T18:56:19.199Z*
