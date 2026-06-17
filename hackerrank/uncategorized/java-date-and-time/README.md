@@ -11,7 +11,7 @@ _Description not available._
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-06-17T18:24:22.131Z  
+**Submitted:** 2026-06-17T18:25:10.764Z  
 
 ```cpp
      * Complete the 'findDay' function below.
