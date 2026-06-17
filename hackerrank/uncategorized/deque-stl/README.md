@@ -11,30 +11,32 @@ _Description not available._
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-06-17T18:22:23.563Z  
+**Submitted:** 2026-06-17T18:22:27.557Z  
 
 ```cpp
-    cout << endl;
-}
+#include <iostream>
+#include <deque>
+using namespace std;
 
-int main() {
-    int t;
-    cin >> t;
+void printKMax(int arr[], int n, int k) {
+    deque<int> dq;
 
-    while (t--) {
-        int n, k;
-        cin >> n >> k;
+    for (int i = 0; i < n; i++) {
 
-        int arr[n];
+        // Remove indices outside current window
+        while (!dq.empty() && dq.front() <= i - k)
+            dq.pop_front();
 
-        for (int i = 0; i < n; i++)
-            cin >> arr[i];
+        // Remove smaller elements from back
+        while (!dq.empty() && arr[dq.back()] <= arr[i])
+            dq.pop_back();
 
-        printKMax(arr, n, k);
+        dq.push_back(i);
+
+        // Print max once first window is formed
+        if (i >= k - 1)
+            cout << arr[dq.front()] << " ";
     }
-
-    return 0;
-}
 ```
 
 ---
