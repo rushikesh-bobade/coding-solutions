@@ -1,20 +1,20 @@
-        while (ss >> attr) {
-            ss >> eq >> value;
+    cout << endl;
+}
 
-            value = value.substr(1, value.size() - 2);
+int main() {
+    int t;
+    cin >> t;
 
-            mp[path + "~" + attr] = value;
-        }
-    }
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
 
-    while (q--) {
-        string query;
-        getline(cin, query);
+        int arr[n];
 
-        if (mp.find(query) != mp.end())
-            cout << mp[query] << '\n';
-        else
-            cout << "Not Found!" << '\n';
+        for (int i = 0; i < n; i++)
+            cin >> arr[i];
+
+        printKMax(arr, n, k);
     }
 
     return 0;
