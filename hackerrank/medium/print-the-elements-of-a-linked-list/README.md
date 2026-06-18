@@ -61,7 +61,7 @@ There are two elements in the linked list. They are represented as 16 -> 13 -> N
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-06-18T06:39:46.508Z  
+**Submitted:** 2026-06-18T08:56:04.669Z  
 
 ```cpp
 
@@ -78,11 +78,13 @@ There are two elements in the linked list. They are represented as 16 -> 13 -> N
      *
      */
     static void printLinkedList(SinglyLinkedListNode head) {
-    SinglyLinkedListNode current = head;
 
-    while (current != null) {
-        System.out.println(current.data);
-        current = current.next;
+    SinglyLinkedListNode temp = head;
+
+    while(temp != null)
+    {
+        System.out.println(temp.data);
+        temp = temp.next;
     }
 }
 
