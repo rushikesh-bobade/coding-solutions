@@ -1,25 +1,51 @@
+<div align="center">
+
 # 🧠 Coding Solutions
 
-> Auto-synced by [PushMyCode](https://github.com/PushMyCode-HQ/extension)
+![Total Solved](https://img.shields.io/badge/Total_Solved-20-blue?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-1_days-orange?style=for-the-badge)
+![Last Synced](https://img.shields.io/badge/Last_Synced-6--18--2026-green?style=for-the-badge)
 
-## Stats
+> 🚀 Auto-synced by [**PushMyCode**](https://github.com/PushMyCode-HQ) — solve it, forget it, it's on GitHub.
 
-| Metric | Count |
-|--------|-------|
-| Total Solved | 19 |
-| Easy | 10 |
-| Medium | 9 |
-| Hard | 0 |
-| Current Streak | 1 days |
-| Last Synced | 6/18/2026 |
-
-## Languages
-
-| Language | Solutions |
-|----------|-----------|
-| C++ | 12 |
-| java (21) | 4 |
-| Java | 3 |
+</div>
 
 ---
-*Last updated: 2026-06-18T10:29:40.153Z*
+
+## 📊 Stats
+
+| Difficulty | Solved |
+|:---:|:---:|
+| 🟢 Easy | **11** |
+| 🟡 Medium | **9** |
+| 🔴 Hard | **0** |
+| **Total** | **20** |
+
+## 🛠️ Languages
+
+| Language | Solutions |
+|:---:|:---:|
+| C++ | **12** |
+| Java | **4** |
+| java (21) | **4** |
+
+## 📂 Repository Structure
+
+```
+📦 coding-solutions/
+├── leetcode/
+│   ├── easy/
+│   ├── medium/
+│   └── hard/
+├── hackerrank/
+├── codechef/
+└── gfg/
+```
+
+---
+
+<div align="center">
+
+*Last updated: 2026-06-18* · Powered by [**PushMyCode**](https://github.com/PushMyCode-HQ)
+
+</div>
