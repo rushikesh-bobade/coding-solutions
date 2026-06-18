@@ -54,9 +54,9 @@ The relative ordering of the elements less than and greater than pivot is also m
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-06-18T09:02:58.225Z  
+**Runtime:** 4 ms (beats 99.24%)  
+**Memory:** 160 MB (beats 42.62%)  
+**Submitted:** 2026-06-18T09:03:07.994Z  
 
 ```java
 class Solution {
