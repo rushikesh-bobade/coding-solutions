@@ -10,8 +10,8 @@ _Description not available._
 
 **Language:** Java  
 **Runtime:** 4 ms (beats 96.93%)  
-**Memory:** 100.6 MB (beats 98.91%)  
-**Submitted:** 2026-06-18T06:43:59.593Z  
+**Memory:** 100.9 MB (beats 94.24%)  
+**Submitted:** 2026-06-18T11:52:22.314Z  
 
 ```java
 /**
