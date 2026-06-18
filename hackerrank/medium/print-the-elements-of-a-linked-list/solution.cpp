@@ -12,11 +12,13 @@
      *
      */
     static void printLinkedList(SinglyLinkedListNode head) {
-    SinglyLinkedListNode current = head;
 
-    while (current != null) {
-        System.out.println(current.data);
-        current = current.next;
+    SinglyLinkedListNode temp = head;
+
+    while(temp != null)
+    {
+        System.out.println(temp.data);
+        temp = temp.next;
     }
 }
 
