@@ -52,9 +52,9 @@ fancy.getIndex(2); // return 20
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-06-20T12:36:38.481Z  
+**Runtime:** 45 ms (beats 95.74%)  
+**Memory:** 124.8 MB (beats 18.44%)  
+**Submitted:** 2026-06-20T12:36:42.935Z  
 
 ```java
 class Fancy {
