@@ -44,9 +44,9 @@ Explanation: It is not possible to make the two strings equal.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.9 MB  
-**Submitted:** 2026-06-20T12:28:12.859Z  
+**Runtime:** 1 ms (beats 99.56%)  
+**Memory:** 44.5 MB (beats 42.46%)  
+**Submitted:** 2026-06-20T12:28:18.823Z  
 
 ```java
 class Solution {
