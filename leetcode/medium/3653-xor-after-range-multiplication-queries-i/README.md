@@ -54,9 +54,9 @@ Return the  **bitwise XOR**  of all elements in `nums` after processing all quer
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-06-20T12:05:54.108Z  
+**Runtime:** 58 ms (beats 97.49%)  
+**Memory:** 47.9 MB (beats 45.53%)  
+**Submitted:** 2026-06-20T12:05:59.989Z  
 
 ```java
 class Solution {
