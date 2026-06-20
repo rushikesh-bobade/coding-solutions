@@ -56,9 +56,9 @@ As all the values are equal in the matrix, even after performing cyclic shifts t
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.4 MB  
-**Submitted:** 2026-06-20T12:28:59.058Z  
+**Runtime:** 1 ms (beats 99.09%)  
+**Memory:** 47.2 MB (beats 13.79%)  
+**Submitted:** 2026-06-20T12:29:04.967Z  
 
 ```java
 class Solution {
