@@ -56,9 +56,9 @@ Explanation: nums is already complementary.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-06-20T10:57:41.823Z  
+**Runtime:** 6 ms (beats 99.16%)  
+**Memory:** 76.5 MB (beats 37.98%)  
+**Submitted:** 2026-06-20T10:57:47.525Z  
 
 ```java
 class Solution {
