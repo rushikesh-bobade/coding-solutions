@@ -50,9 +50,9 @@ No submatrix has at least one `'X'`.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-06-20T12:35:18.210Z  
+**Runtime:** 24 ms (beats 78.63%)  
+**Memory:** 249.7 MB (beats 29.91%)  
+**Submitted:** 2026-06-20T12:35:26.267Z  
 
 ```java
 class Solution {
