@@ -51,9 +51,9 @@ The diagram above shows the grid before and after the transformation.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-06-20T12:34:12.073Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 47.5 MB (beats 39.92%)  
+**Submitted:** 2026-06-20T12:34:17.589Z  
 
 ```java
 class Solution {
