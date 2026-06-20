@@ -56,9 +56,9 @@ Return an integer denoting the mirror distance of `n`​​​​​​​.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.9 MB  
-**Submitted:** 2026-06-20T11:56:26.958Z  
+**Runtime:** 1 ms (beats 99.85%)  
+**Memory:** 42.9 MB (beats 10.74%)  
+**Submitted:** 2026-06-20T11:56:32.738Z  
 
 ```java
 class Solution {
