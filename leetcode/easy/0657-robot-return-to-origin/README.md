@@ -42,9 +42,9 @@ Explanation: The robot moves left twice. It ends up two "moves" to the left of t
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-06-20T12:06:48.423Z  
+**Runtime:** 4 ms (beats 98.77%)  
+**Memory:** 46.2 MB (beats 19.77%)  
+**Submitted:** 2026-06-20T12:06:54.113Z  
 
 ```java
 class Solution {
