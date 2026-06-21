@@ -55,9 +55,9 @@ Explanation: The boy can buy all the ice cream bars for a total price of 1 + 6 +
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-06-21T15:25:06.251Z  
+**Runtime:** 4 ms (beats 99.23%)  
+**Memory:** 83.1 MB (beats 83.57%)  
+**Submitted:** 2026-06-21T15:25:13.769Z  
 
 ```java
 class Solution {
