@@ -38,7 +38,7 @@ Explanation: Since, no element is present more than 2/2 times, so there is no ma
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-06-20T11:03:10.541Z  
+**Submitted:** 2026-06-21T11:02:59.236Z  
 
 ```java
 class Solution {
