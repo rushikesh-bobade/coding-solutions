@@ -61,9 +61,9 @@ So there are 5 such subarrays.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 27 ms (beats 80.00%)  
-**Memory:** 47.1 MB (beats 40.92%)  
-**Submitted:** 2026-06-25T18:30:03.969Z  
+**Runtime:** 0 ms  
+**Memory:** 42.3 MB  
+**Submitted:** 2026-06-25T18:30:57.644Z  
 
 ```java
 class Solution {
