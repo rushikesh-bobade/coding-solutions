@@ -62,8 +62,8 @@ All arrays meet the ZigZag conditions.
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-06-24T13:04:57.057Z  
+**Memory:** 42.1 MB  
+**Submitted:** 2026-06-24T13:09:39.486Z  
 
 ```java
 class Solution {
