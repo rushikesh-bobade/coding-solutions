@@ -6,102 +6,87 @@ class Solution {
 
         if (n == 1) return m;
 
-        long[] U2 = new long[m];
-        long[] D2 = new long[m];
+        int sz = 2 * m;
 
+        long[] state = new long[sz];
+
+        // U2
         for (int i = 0; i < m; i++) {
-            U2[i] = i;
-            D2[i] = m - 1 - i;
+            state[i] = i;
+        }
+
+        // D2
+        for (int i = 0; i < m; i++) {
+            state[m + i] = m - 1 - i;
         }
 
         if (n == 2) {
             long ans = 0;
-            for (int i = 0; i < m; i++) {
-                ans += U2[i] + D2[i];
-            }
-            return (int) (ans % MOD);
+            for (long x : state) ans = (ans + x) % MOD;
+            return (int) ans;
         }
 
-        long[][] A = new long[m][m];
+        long[][] T = new long[sz][sz];
+
+        // upper-right block = L
         for (int i = 0; i < m; i++) {
-            for (int j = 0; j < m; j++) {
-                A[i][j] = Math.min(i, j);
+            for (int j = 0; j < i; j++) {
+                T[i][m + j] = 1;
             }
         }
 
-        long[] baseU, baseD;
-        long exp;
-
-        if ((n & 1) == 0) {
-            // even length
-            baseU = U2;
-            baseD = D2;
-            exp = n / 2 - 1;
-        } else {
-            // length 3 bases
-            long[] U3 = new long[m];
-            long[] D3 = new long[m];
-
-            for (int i = 0; i < m; i++) {
-                long s1 = 0;
-                for (int j = 0; j < i; j++) {
-                    s1 += D2[j];
-                }
-                U3[i] = s1 % MOD;
-
-                long s2 = 0;
-                for (int j = i + 1; j < m; j++) {
-                    s2 += U2[j];
-                }
-                D3[i] = s2 % MOD;
+        // lower-left block = R
+        for (int i = 0; i < m; i++) {
+            for (int j = i + 1; j < m; j++) {
+                T[m + i][j] = 1;
             }
-
-            baseU = U3;
-            baseD = D3;
-            exp = (n - 3L) / 2;
         }
 
-        long[][] P = matPow(A, exp);
+        long[][] P = power(T, n - 2);
 
-        long[] finalU = matVec(P, baseU);
-        long[] finalD = matVec(P, baseD);
+        long[] result = multiply(P, state);
 
         long ans = 0;
-        for (int i = 0; i < m; i++) {
-            ans = (ans + finalU[i] + finalD[i]) % MOD;
+        for (long x : result) {
+            ans = (ans + x) % MOD;
         }
 
         return (int) ans;
     }
 
-    private long[] matVec(long[][] M, long[] v) {
-        int n = M.length;
+    private long[] multiply(long[][] A, long[] v) {
+        int n = A.length;
         long[] res = new long[n];
 
         for (int i = 0; i < n; i++) {
             long cur = 0;
+
             for (int j = 0; j < n; j++) {
-                cur = (cur + M[i][j] * v[j]) % MOD;
+                cur = (cur + A[i][j] * v[j]) % MOD;
             }
+
             res[i] = cur;
         }
+
         return res;
     }
 
-    private long[][] matPow(long[][] A, long e) {
+    private long[][] power(long[][] A, long exp) {
         int n = A.length;
 
         long[][] res = new long[n][n];
-        for (int i = 0; i < n; i++) res[i][i] = 1;
 
-        long[][] cur = A;
+        for (int i = 0; i < n; i++) {
+            res[i][i] = 1;
+        }
 
-        while (e > 0) {
-            if ((e & 1) == 1) {
-                res = multiply(res, cur);
+        while (exp > 0) {
+            if ((exp & 1) == 1) {
+                res = multiply(res, A);
             }
-            cur = multiply(cur, cur);
-            e >>= 1;
+
+            A = multiply(A, A);
+            exp >>= 1;
         }
 
         return res;
@@ -109,17 +94,22 @@ class Solution {
 
     private long[][] multiply(long[][] A, long[][] B) {
         int n = A.length;
+
         long[][] C = new long[n][n];
 
         for (int i = 0; i < n; i++) {
             for (int k = 0; k < n; k++) {
+
                 if (A[i][k] == 0) continue;
 
                 long aik = A[i][k];
+
                 for (int j = 0; j < n; j++) {
+
                     if (B[k][j] == 0) continue;
 
-                    C[i][j] = (C[i][j] + aik * B[k][j]) % MOD;
+                    C[i][j] =
+                        (C[i][j] + aik * B[k][j]) % MOD;
                 }
             }
         }
