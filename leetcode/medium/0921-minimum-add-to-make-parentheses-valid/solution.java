@@ -1,7 +1,6 @@
 class Solution {
     public int minAddToMakeValid(String s) {
         
-        Stack<Integer>st=new Stack<>();
         int low=0;
         int incomplete=0;
 
