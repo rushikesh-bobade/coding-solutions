@@ -44,15 +44,14 @@ Output: 3
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 70.13%)  
-**Memory:** 42.8 MB (beats 74.52%)  
-**Submitted:** 2026-10-06T10:33:15.147Z  
+**Runtime:** 0 ms  
+**Memory:** 43 MB  
+**Submitted:** 2026-10-06T10:33:51.525Z  
 
 ```java
 class Solution {
     public int minAddToMakeValid(String s) {
         
-        Stack<Integer>st=new Stack<>();
         int low=0;
         int incomplete=0;
 
