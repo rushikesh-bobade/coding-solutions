@@ -17,7 +17,7 @@ class Solution {
                 dq.pollLast();
             }
 
-            dq.offer(i);
+            dq.offer(i);//use dq.offer for queue and dq.push for stack and poll and pop respectively
 
             if (i >= k - 1) {
                 result[idx++] = nums[dq.peekFirst()];
