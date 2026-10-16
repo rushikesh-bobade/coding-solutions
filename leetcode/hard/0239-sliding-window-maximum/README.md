@@ -46,9 +46,9 @@ Output: [1]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 30 ms (beats 68.23%)  
-**Memory:** 146.2 MB (beats 53.33%)  
-**Submitted:** 2026-10-08T08:10:22.479Z  
+**Runtime:** 32 ms (beats 34.50%)  
+**Memory:** 145.9 MB (beats 53.56%)  
+**Submitted:** 2026-10-16T19:13:26.403Z  
 
 ```java
 class Solution {
@@ -70,7 +70,7 @@ class Solution {
                 dq.pollLast();
             }
 
-            dq.offer(i);
+            dq.offer(i);//use dq.offer for queue and dq.push for stack and poll and pop respectively
 
             if (i >= k - 1) {
                 result[idx++] = nums[dq.peekFirst()];
